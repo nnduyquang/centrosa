@@ -127,7 +127,6 @@ if ( !function_exists( 'wbc907_wp_scripts' ) ) {
 		wp_register_style( 'wbc907-animated', get_template_directory_uri().'/assets/css/animate.min.css' );
 		wp_enqueue_style( 'wbc907-animated' );
 
-
 		wp_enqueue_style( 'theme-styles', get_template_directory_uri().'/assets/css/theme-styles.css' );
 		wp_enqueue_style( 'theme-features', get_template_directory_uri().'/assets/css/theme-features.css' );
 
@@ -150,7 +149,7 @@ if ( !function_exists( 'wbc907_wp_scripts' ) ) {
 		wp_register_script( 'wbc-mb-YTPlayer', get_template_directory_uri() . '/assets/js/jquery.mb.YTPlayer.js', array( 'jquery' ), false );
 
 		wp_register_script( 'wbc-retina-imgs', get_template_directory_uri() . '/assets/js/retina.min.js', array( 'jquery' ), false, true );
-
+		
 		global $wbc907_data;
 		if ( isset( $wbc907_data['opts-retina-enable'] ) && $wbc907_data['opts-retina-enable'] == 1 ) {
 			wp_enqueue_script( 'wbc-retina-imgs' );
